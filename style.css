@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     line-height: 1.5em;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -65,7 +66,7 @@ form .content .name{
 form .content .query{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 10%;
     width: 100%;
     height: auto;
 }
@@ -73,6 +74,7 @@ form .content .query .radio-query{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 5px;
 }
 
 form .content .query .radio-query input,
@@ -139,6 +141,31 @@ button:active{
     transition: all .5s ease-out;
 }
 
-@media screen and (max-width: 375px) {
-        
+@media screen and (max-width: 550px) {
+    .container{
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+    .wrapper{
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+    form .content .name{
+        flex-direction: column;
+    }
+    form .content .query .radio-query{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    li{
+        width: 100%;
+        height: auto;
+        margin: 5px auto;
+    }
+    form #message{
+        width: 100%;
+        height: 150px;
+    }
 }

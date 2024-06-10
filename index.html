@@ -25,23 +25,23 @@
         <section class="content">
           <div class="name">
             <div class="firstname">
-              <h4>First Name</h4>
+              <h4>First Name *</h4>
               <input type="text" name="firstname" id="firstname-input">
               <div class="warningmsg">This field is required</div>
             </div>
             <div class="lastname">
-              <h4>Last Name</h4>
+              <h4>Last Name *</h4>
               <input type="text" name="lastname" id="lastname-input">
               <div class="warningmsg">This field is required</div>
             </div>
           </div>
           <div class="email">
-            <h4>Email Address</h4>
+            <h4>Email Address *</h4>
             <input type="text" name="email" id="email-input">
             <div class="warningmsg">Please enter a valid email address</div>
           </div>
           <div class="query">
-            <h4> Query Type</h4>
+            <h4> Query Type *</h4>
             <div class="radio-query">
               <li><input type="radio" name="enquiry" id="general-eqr"><span>General Enquiry</span></li>
               <li><input type="radio" name="enquiry" id="suppor-eqr"><label for="support">Support Request</label></li>
@@ -49,12 +49,12 @@
             <div class="warningmsg">Please select a query type</div>
           </div>
           <div class="message">
-            <h4>Message</h4>
+            <h4>Message *</h4>
             <textarea name="message" id="message"  maxlength="400"  placeholder="No more than 400 characters long"></textarea>
             <div class="warningmsg">This field is required</div>
           </div>
           <div class="consent">
-            <input type="checkbox" name="enquiry" id="suppor-eqr"><span for="support"> I consent to being contacted by the team</span>
+            <input type="checkbox" name="enquiry" id="consent-eqr"><span for="support"> I consent to being contacted by the team *</span>
             <div class="warningmsg">To submit this form, please consent to being contacted</div>
           </div>
         </section>
