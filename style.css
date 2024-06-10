@@ -115,12 +115,9 @@ form #message:focus{
     border: 2px solid hsl(186, 15%, 59%);
     overflow: hidden;
 }
-.warningmsg{
-    font-size: 12px;
-    color: hsl(0, 66%, 54%);
-}
+
 form .consent span{
-    font-size: 15px;
+    font-size: 12px;
 }
 button{
     width: 100%;
@@ -139,6 +136,17 @@ button:hover{
 button:active{
     opacity: .7;
     transition: all .5s ease-out;
+}
+
+.warningmsg{
+    font-size: 12px;
+    color: hsl(0, 66%, 54%);
+}
+.error{
+    border: 1px solid hsl(0, 66%, 54%);
+}
+.success{
+    border: 1px solid hsl(169, 82%, 27%);
 }
 
 @media screen and (max-width: 550px) {
