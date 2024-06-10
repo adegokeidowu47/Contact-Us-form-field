@@ -3,15 +3,17 @@ const form = document.querySelector('form')
 const firstName = document.querySelector('#firstname-input');
 const lastName = document.querySelector('#lastname-input');
 const email = document.querySelector('#email-input');
-const message = document.querySelector('#message');
+const message = document.querySelector('#message-content');
 const radioLi = document.querySelectorAll('li input');
 const checkBox = document.querySelector('#consent-eqr');
 const allInputs = document.querySelectorAll('input');
+const allWarningMsg = document.querySelectorAll('.warningmsg');
 
-console.log(radioLi.forEach( (a) => {
-    console.log(!a.value);
-}));
+// console.log(radioLi.forEach( (a) => {
+//     console.log(!a.value);
+// }));
 
+// console.log(message);
 
 
 // function validate
@@ -20,8 +22,21 @@ const validateInputs = () => {
     const firstNameValue = firstName.value.trim();
     const lastNameValue = lastName.value.trim();
     const emailValue = email.value.trim();
+    const messageValue = message.value.trim();
+    
 
+    if(!allInputs.value && !messageValue ){
 
+        message.style.border = '1px solid red';
+        allInputs.forEach( (elem, message) => {
+            elem.style.border = '1px solid red';
+            const errorDisplay = elem.parentElement.querySelectorAll('.warningmsg');
+            errorDisplay.forEach( (item) => {
+                item.innerText = "This field is required!";
+            });
+        });
+        return;
+    }
     
     if (!firstNameValue) {
         setError(firstName, 'This field is required!');
@@ -79,7 +94,5 @@ form.addEventListener('submit', function(e){
 
 
     validateInputs();
-    // allInputs.forEach( (elem) => {
-    //     elem.style.border = '1px solid red'
-    // });
+
 });

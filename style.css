@@ -100,7 +100,7 @@ li:hover{
     background: hsl(148, 38%, 91%);
 }
 
-form #message{
+form #message-content{
     width: 100%;
     height: 70px; 
     border-radius: 5px;
@@ -110,7 +110,7 @@ form #message{
     overflow: hidden;
     resize: none;
 }
-form #message:focus{
+form #message-content:focus{
     outline: none;
     border: 2px solid hsl(186, 15%, 59%);
     overflow: hidden;
@@ -148,7 +148,9 @@ button:active{
 .success{
     border: 1px solid hsl(169, 82%, 27%);
 }
-
+.msg{
+    border: 2px solid red;
+}
 @media screen and (max-width: 550px) {
     .container{
         width: 100%;
