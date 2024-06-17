@@ -122,11 +122,12 @@ form #message-content:focus{
     border: 2px solid hsl(186, 15%, 59%);
     overflow: hidden;
 }
-form .consent{
+form .consent .checkbox{
   display: flex;
   align-items: center;
+  /* flex-direction: column; */
 }
-form .consent span{
+form .consent p{
   margin-left: 5px;
   font-size: 13px;
 }
