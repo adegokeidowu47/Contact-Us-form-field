@@ -12,13 +12,10 @@
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
+    <div class="form-successful"></div>
     <div class="wrapper">
       <form action="#" method="post">
         <h3>Contact Us</h3>
@@ -46,32 +43,28 @@
               <li><input type="radio" name="enquiry" id="general-eqr"><span>General Enquiry</span></li>
               <li><input type="radio" name="enquiry" id="suppor-eqr"><label for="support">Support Request</label></li>
             </div>
-            <div class="warningmsg"></div>
+            <div class="warningmsg" id="radio-err"></div>
           </div>
           <div class="message">
             <h4>Message *</h4>
-            <textarea name="message" id="message-content"  maxlength="400"  placeholder="No more than 400 characters long"></textarea>
-            <div class="warningmsg">This field is required</div>
+            <textarea name="message" id="message-content" placeholder="No more than 400 characters long"></textarea>
+            <div class="warningmsg"></div>
           </div>
           <div class="consent">
             <input type="checkbox" name="enquiry" id="consent-eqr"><span for="support"> I consent to being contacted by the team *</span>
-            <div class="warningmsg">To submit this form, please consent to being contacted</div>
+            <div class="warningmsg" id="consent-err"></div>
           </div>
         </section>
         <button type="submit">Submit</button>
       </form>
     </div>
-  </div>
-
-
-
-  <!-- Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>. -->
+    Coded by <a href="https://www.linkedin.com/in/adegoke-idowu-29877529b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Adegoke Idowu(Shaddy)</a>.
+    
     <script src="script.js"></script>
   </div>
+  </div>
+  
 </body>
 </html>
