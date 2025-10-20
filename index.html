@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Contact form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
+
 <body>
   <div class="container">
     <div class="form-successful"></div>
@@ -23,52 +25,58 @@
           <div class="name">
             <div class="firstname">
               <label for="firstname">First Name *</label>
-              <input type="text" name="firstname" id="firstname-input">
-              <div class="warningmsg"></div>
-            </div>
-            <div class="lastname">
-              <label for="lastname">Last Name *</label>
-              <input type="text" name="lastname" id="lastname-input">
-              <div class="warningmsg"></div>
+              <input type="text" name="firstname" id="firstname-input" title="firstname">
+              <div class=" warningmsg"></div>
             </div>
           </div>
-          <div class="email">
-            <label for="lastname">Email Address *</label>
-            <input type="text" name="email" id="email-input">
+          <div class="lastname">
+            <label for="lastname">Last Name *</label>
+            <input type="text" name="lastname" id="lastname-input" title="lastname">
             <div class="warningmsg"></div>
           </div>
-          <div class="query">
-            <h4> Query Type *</h4>
-            <div class="radio-query">
-              <li><label for="enquiry"><input type="radio" name="enquiry" id="general-eqr">General Enquiry</label></li>
-              <li><label for="support"><input type="radio" name="enquiry" id="suppor-eqr">Support Request</label></li>
-            </div>
-            <div class="warningmsg" id="radio-err"></div>
-          </div>
-          <div class="message">
-            <h4>Message *</h4>
-            <textarea name="message" id="message-content" placeholder="No more than 400 characters long"></textarea>
-            <div class="warningmsg"></div>
-          </div>
-          <div class="consent">
-            <div class="checkbox"> 
-            <label for=""><input type="checkbox" name="consentChecked" id="consent-eqr"></label>
-            <p>I consent to being contacted by the team *</p>
-            </div>
-            <div class="warningmsg" id="consent-err"></div>
-          </div>
-        </section>
-        <button type="submit">Submit</button>
-      </form>
     </div>
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/adegoke-idowu-29877529b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Adegoke Idowu(Shaddy)</a>.
-    
+    <div class="email">
+      <label for="lastname">Email Address *</label>
+      <input type="text" name="email" id="email-input" title="email">
+      <div class="warningmsg"></div>
+    </div>
+    <div class="query">
+      <h4> Query Type *</h4>
+      <div class="radio-query">
+        <ul>
+          <li><label for="enquiry"><input type="radio" name="enquiry" id="general-eqr">General Enquiry</label></li>
+          <li><label for="support"><input type="radio" name="enquiry" id="suppor-eqr">Support Request</label></li>
+        </ul>
+      </div>
+      <div class="warningmsg" id="radio-err"></div>
+    </div>
+    <div class="message">
+      <h4>Message *</h4>
+      <textarea name="message" id="message-content" placeholder="No more than 400 characters long"></textarea>
+      <div class="warningmsg"></div>
+    </div>
+    <div class="consent">
+      <div class="checkbox">
+        <label for=""><input type="checkbox" name="consentChecked" id="consent-eqr" title="consent"></label>
+        <p>I consent to being contacted by the team *</p>
+      </div>
+      <div class="warningmsg" id="consent-err"></div>
+    </div>
+    </section>
+    <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a
+      href="https://www.linkedin.com/in/adegoke-idowu-29877529b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Adegoke
+      Idowu(Shaddy)</a>.
+
 
     <script src="script.js"></script>
   </div>
   </div>
-  
+
 </body>
+
 </html>
